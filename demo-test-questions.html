@@ -1,0 +1,295 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillmeter users</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <section class="mobile-menu">
+
+    </section>
+    <section class="billing-wrapper">
+        <div class="panel-left">
+            <header>
+                <a href="#" class="logo-link col-xs-12">
+                    <img src="images/logo.png" class="img-responsive logo-big">
+                    <img src="images/logo-small.jpg" class="img-responsive logo-small logo-invisible">
+                </a>
+                <nav class="navbar navbar-default col-xs-12 nav-left">
+                    <hr class="left-menu-separator">
+                    <div class="navbar-header">
+                        <button type="button" class="hamburger-button button-nav-left pull-left">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                     <div class="navbar-collapse">
+                        <h5>MENU</h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="dashboard.html" class="menu-text"><img src="images/dashboard.jpg"><span class="menu-text-name">Dashboard</span></a></li>
+                            <li><a href="tests.html" class="menu-text"><img src="images/tests.jpg"><span class="menu-text-name">Tests</span></a></li>
+                            <li><a href="candidates.html" class="menu-text"><img src="images/candidates.jpg"><span class="menu-text-name">Candidates</span></a></li>
+                            <li><a href="" class="menu-text"><img src="images/library.jpg"><span class="menu-text-name">Tests Library</span></a></li>
+                        </ul>
+                    </div>
+                    <hr class="left-menu-separator-2">
+                    <div id="navbar" class="navbar-collapse">
+                        <h5>TEST <span class="test-centre">CENTER</span></h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="notifications.html" class="menu-text"><img src="images/notifications.jpg"><span class="menu-text-name">Notifications</span></a></li>
+                            <li><a href="custom-pages.html" class="menu-text"><img src="images/custom.jpg"><span class="menu-text-name">Custom Pages</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section class="main-billing">
+            <div class="container-fluid main-fluid">
+                <div class="row">
+                    <div class="col-xs-12 left-30">
+                        <div class="top-content-wrapper">
+                            <h3 class="page-title col-sm-5">Demo Test Questions</h3>
+                            <nav class="navbar navbar-default col-sm-7 nav-main">
+                                <div>
+                                    <ul class="nav navbar-nav menu-top">
+                                        <li><a href="#" class="get-help">Get Help<img src="images/arrow-down.jpg"></a></li>
+                                        <li><a tabindex="0" role="button" type="button" class="popover-2 settings" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></a>
+                                        </li>
+                                        <li><a tabindex="0" role="button" type="button" class="account popover-1" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></li>
+                                        <li><a href="#" class="logout"></a></li>
+                                    </ul>
+                                </div>
+                               <ul id="popover-content-1" class="list-group" style="display: none">
+                                    <a href="account-settings.html" class="list-group-item"><img class="account-item-settings" src="images/account-settings-icon.png">Settings</a>
+                                    <a href="billing.html" class="list-group-item"><img class="account-item-settings" src="images/account-billing-icon.png">Billing</a>
+                                </ul>
+                                <ul id="popover-content-2" class="list-group" style="display: none">
+                                    <a href="company-settings.html" class="list-group-item"><img class="account-item-settings" src="images/briefcase.png">Company</a>
+                                    <a href="company-users.html" class="list-group-item"><img class="account-item-settings" src="images/person-logo.png">Users</a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-content col-xs-12">
+                            <hr class="menu-separator">
+                            <ul id="popover-content-4" class="list-group actions-menu" style="display: none">
+                                <div class="question-content-wrapper">
+                                    <div class="action-buttons action-buttons-popover">
+                                       <a href="test-questions-edit.html"> <button><span class="question-edit"></span>Edit</button></a>
+                                      <a href="test-questions-preview-alternative.html">  <button><span class="question-preview"></span>Preview</button></a>
+                                        <button><span class="question-clone"></span>Clone</button>
+                                        <button><span class="question-delete"></span>Delete</button>
+                                    </div>
+                            </ul>
+
+                            <div class="modal fade demo-test-modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <div class="modal-header">
+                                            
+                                            <h4 class="modal-title" id="myModalLabel">What type of question do you want to add?</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="questions-type-wrapper">
+                                                <a class="type-question-item tq-single first-row">
+                                                <div>
+                                                    <span class="center-block"></span>
+                                                    <p>Single Answer</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-multi first-row"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Multi Answer</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-truefalse first-row right-column"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>True/False</p>
+                                                </div></a>
+                                                 <a class="type-question-item tq-ranking"><div >
+                                                    <span class="center-block"></span>
+                                                    <p>Ranking</p>
+                                                </div></a>
+                                               <a class="type-question-item tq-match">  <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Exact Match</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-essay right-column"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Essay</p>
+                                                </div></a>
+                                                <a  class="type-question-item tq-picture"> <div>
+                                                    <span class="center-block"></span>
+                                                    <p>Picture Choice</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-cloud"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>File Upload</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-typing right-column"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Typing Speed</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-video"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Video Recording</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-programming"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Programming</p>
+                                                </div></a>
+                                                <a class="type-question-item tq-info right-column"> <div >
+                                                    <span class="center-block"></span>
+                                                    <p>Instructions</p>
+                                                </div></a>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="modal-close-button" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="demo-test questions-demo">
+                                <button type="button" data-toggle="modal" data-target="#myModal2" class="question-test-button">New Question</button>
+                                <div class="whole-list-opt">
+                                    <h3 class="demo-test-header">Questions</h3>
+                                    <button class="list-expand"><span ></span>Expand All</button>
+                                    <button class="list-collapse"><span></span>Collapse All</button>
+                                    <button class="save-order"><span></span>Save Order</button>
+                                </div>
+                                <div class="questions-list-wrapper">
+                                    <ul id="sortable1" class="connectedSortable question-list">
+                                        <li class="ui-state-default">
+                                            <div class="question-content-wrapper">
+                                                <span class="question-number"><span class="question-bullet"></span> Question
+                                                1
+                                                </span>
+                                                <span class="question-info">Multiple answers, Scored</span>
+                                                <span class="question-toggle" data-toggle="collapse" data-target="#demo"></span>
+                                                <span class="question-actions-wrapper">
+                                                <div class="action-buttons">
+                                                    <a href="test-questions-edit.html"><button><span class="question-edit"></span>Edit</button></a>
+                                               <a href="test-questions-preview-alternative.html"> <button><span class="question-preview"></span>Preview</button></a>
+                                                <button><span class="question-clone"></span>Clone</button>
+                                                <button><span class="question-delete"></span>Delete</button>
+                                            </div>
+                                            <span class="question-actions popover-4" data-toggle="popover" data-placement="bottom"></span>
+                                            </span>
+                                </div>
+                                <div class="test-content collapse code-snippet" id="demo">
+                                    <p> public class Sample </p>
+                                    <p>{ </p>
+                                    <p class="code-indent">public int x; </p>
+                                    <p class="code-indent">public virtual void fun() </p>
+                                    <p class="code-indent"> { } </p>
+                                    <p>}</p>
+                                </div>
+                                </li>
+                                <li class="ui-state-default">
+                                    <div class="question-content-wrapper">
+                                        <span class="question-number"> <span class="question-bullet"></span> Question 2
+                                        </span>
+                                        <span class="question-info">Single answer, Scored</span>
+                                        <span class="question-toggle" data-toggle="collapse" data-target="#demo2"></span>
+                                        <span class="question-actions-wrapper">
+                                                <div class="action-buttons">
+                                                    <a href="test-questions-edit.html"><button><span class="question-edit"></span>Edit</button></a>
+                                               <a href="test-questions-preview-alternative.html"> <button><span class="question-preview"></span>Preview</button></a>
+                                                <button><span class="question-clone"></span>Clone</button>
+                                                <button><span class="question-delete"></span>Delete</button>
+                                    </div>
+                                    <span class="question-actions popover-4" data-toggle="popover" data-placement="bottom"></span>
+                                    </span>
+                            </div>
+                            <div class="test-content collapse code-snippet" id="demo2">
+                                <p> public class Sample </p>
+                                <p>{ </p>
+                                <p class="code-indent">public int x; </p>
+                                <p class="code-indent">public virtual void fun() </p>
+                                <p class="code-indent"> { } </p>
+                                <p>}</p>
+                            </div>
+                            </li>
+                            <li class="ui-state-default">
+                                <div class="question-content-wrapper">
+                                    <span class="question-number">  <span class="question-bullet"></span> Question 3
+                                    </span>
+                                    <span class="question-info">Single answer, Scored</span>
+                                    <span class="question-toggle" data-toggle="collapse" data-target="#demo3"></span>
+                                    <span class="question-actions-wrapper">
+                                        <div class="action-buttons">
+                                                    <a href="test-questions-edit.html"><button><span class="question-edit"></span>Edit</button></a>
+                                               <a href="test-questions-preview-alternative.html"> <button><span class="question-preview"></span>Preview</button></a>
+                                                <button><span class="question-clone"></span>Clone</button>
+                                                <button><span class="question-delete"></span>Delete</button>
+                                </div>
+                                <span class="question-actions popover-4" data-toggle="popover" data-placement="bottom"></span>
+                                </span>
+                                </span>
+                                </div>
+                                <div class="test-content collapse code-snippet" id="demo3">
+                                    <p> public class Sample </p>
+                                    <p>{ </p>
+                                    <p class="code-indent">public int x; </p>
+                                    <p class="code-indent">public virtual void fun() </p>
+                                    <p class="code-indent"> { } </p>
+                                    <p>}</p>
+                                </div>
+                            </li>
+                            <li class="ui-state-default">
+                                <div class="question-content-wrapper">
+                                    <span class="question-number"><span class="question-bullet"></span> Question 4
+                                    </span>
+                                    <span class="question-info">File upload, Not scored</span>
+                                    <span class="question-toggle" data-toggle="collapse" data-target="#demo4"></span>
+                                    <span class="question-actions-wrapper">
+                                                <div class="action-buttons">
+                                                    <a href="test-questions-edit.html"><button><span class="question-edit"></span>Edit</button></a>
+                                               <a href="test-questions-preview-alternative.html"> <button><span class="question-preview"></span>Preview</button></a>
+                                                <button><span class="question-clone"></span>Clone</button>
+                                                <button><span class="question-delete"></span>Delete</button>
+                                </div>
+                                <span class="question-actions popover-4" data-toggle="popover" data-placement="bottom"></span>
+                                </span>
+                                </span>
+                        </div>
+                        <div class="test-content collapse code-snippet" id="demo4">
+                            <p> public class Sample </p>
+                            <p>{ </p>
+                            <p class="code-indent">public int x; </p>
+                            <p class="code-indent">public virtual void fun() </p>
+                            <p class="code-indent"> { } </p>
+                            <p>}</p>
+                        </div>
+                        </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <script src="vendor/jquery/jquery.ui.touch-punch.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillmeter account billing</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="mobile-menu">
+
+    </section>
+    <section class="billing-wrapper">
+        <div class="panel-left">
+            <header>
+                <a href="#" class="logo-link col-xs-12">
+                    <img src="images/logo.png" class="img-responsive logo-big">
+                    <img src="images/logo-small.jpg" class="img-responsive logo-small logo-invisible">
+                </a>
+                <nav class="navbar navbar-default col-xs-12 nav-left">
+                    <hr class="left-menu-separator">
+                    <div class="navbar-header">
+                        <button type="button" class="hamburger-button button-nav-left pull-left">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                     <div class="navbar-collapse">
+                        <h5>MENU</h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="dashboard.html" class="menu-text"><img src="images/dashboard.jpg"><span class="menu-text-name">Dashboard</span></a></li>
+                            <li><a href="tests.html" class="menu-text"><img src="images/tests.jpg"><span class="menu-text-name">Tests</span></a></li>
+                            <li><a href="candidates.html" class="menu-text"><img src="images/candidates.jpg"><span class="menu-text-name">Candidates</span></a></li>
+                            <li><a href="" class="menu-text"><img src="images/library.jpg"><span class="menu-text-name">Tests Library</span></a></li>
+                        </ul>
+                    </div>
+                    <hr class="left-menu-separator-2">
+                    <div id="navbar" class="navbar-collapse">
+                        <h5>TEST <span class="test-centre">CENTER</span></h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="notifications.html" class="menu-text"><img src="images/notifications.jpg"><span class="menu-text-name">Notifications</span></a></li>
+                            <li><a href="custom-pages.html" class="menu-text"><img src="images/custom.jpg"><span class="menu-text-name">Custom Pages</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section class="main-billing">
+            <div class="container-fluid main-fluid">
+                <div class="row">
+                    <div class="col-xs-12 left-30">
+                        <div class="top-content-wrapper">
+                            <h3 class="page-title col-sm-5">Ubisoft Graduate Program - Programming Test</h3>
+                            <nav class="navbar navbar-default col-sm-7 nav-main">
+                                <div>
+                                    <ul class="nav navbar-nav menu-top">
+                                        <li><a href="#" class="get-help">Get Help<img src="images/arrow-down.jpg"></a></li>
+                                        <li><a tabindex="0" role="button" type="button" class="popover-2 settings" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></a>
+                                        </li>
+                                        <li><a tabindex="0" role="button" type="button" class="account popover-1" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></li>
+                                        <li><a href="#" class="logout"></a></li>
+                                    </ul>
+                                </div>
+                               <ul id="popover-content-1" class="list-group" style="display: none">
+                                    <a href="account-settings.html" class="list-group-item"><img class="account-item-settings" src="images/account-settings-icon.png">Settings</a>
+                                    <a href="billing.html" class="list-group-item"><img class="account-item-settings" src="images/account-billing-icon.png">Billing</a>
+                                </ul>
+                                <ul id="popover-content-2" class="list-group" style="display: none">
+                                    <a href="company-settings.html" class="list-group-item"><img class="account-item-settings" src="images/briefcase.png">Company</a>
+                                    <a href="company-users.html" class="list-group-item"><img class="account-item-settings" src="images/person-logo.png">Users</a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-content col-xs-12">
+                            <hr class="menu-separator">
+                            <h2 class="student-name">Susan Shepard</h2>
+                            <div class="test-results">
+                                <div class="test-status">
+                                    <h4>Test Result <span class="test-passed">PASSED</span></h4>
+                                    <span class="test-date">
+                                        <span class="calendar-icon"></span> 27 January,
+                                    2017
+                                    </span>
+                                    <span class="test-time">
+                                        <span class="clock-icon"></span> 2 minutes
+                                    </span>
+                                </div>
+                                <div class="test-score">
+                                    <div class="test-result-item">
+                                        <p class="test-name">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                        <div class="progress-wrapper">
+                                            <div class="progress">
+                                                <div class="progress-bar bar-green" role="progressbar" aria-valuenow="83.33" aria-valuemin="0" aria-valuemax="100" style="width:83.33%">
+                                                </div>
+
+                                            </div>
+                                            <span class="percent-result">83.33%</span>
+                                        </div>
+                                        <p class="score-comparison">Scored better than 100% of the candidates (Average score is 66.67)</p>
+                                    </div>
+                                    <div class="test-result-item">
+                                        <p class="test-name">Video test</p>
+                                        <div class="progress-wrapper">
+                                            <div class="progress">
+                                                <div class="progress-bar bar-orange" role="progressbar" aria-valuenow="60.15" aria-valuemin="0" aria-valuemax="60.15" style="width:70%">
+                                                </div>
+                                            </div>
+                                            <span class="percent-result">60.15%</span>
+                                        </div>
+                                        <p class="score-comparison">Scored better than 100% of the candidates (Average score is 66.67)</p>
+                                    </div>
+                                    <div class="test-result-item">
+                                        <p class="test-name">Java dev</p>
+                                        <div class="progress-wrapper">
+                                            <div class="progress">
+                                                <div class="progress-bar bar-red" role="progressbar" aria-valuenow="20.48" aria-valuemin="0" aria-valuemax="100" style="width:20.48%">
+                                                </div>
+                                            </div>
+                                            <span class="percent-result">20.48%</span>
+                                        </div>
+                                        <p class="score-comparison">Scored better than 100% of the candidates (Average score is 66.67)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="test-content-name">Ubisoft Graduate Program - Programming Test</h4>
+                            <div class="test-content">
+                                <div class="question-wrapper"><span class="question-icon">Q</span> 
+                                    <h5 class="question-heading">QUESTION 1</h5>
+                                    <p>What are your favorite colors?</p>
+                                    <div class="answer-heading-cont">
+                                    <span class="answer-icon">A</span>
+                                    
+                                    <h5 class="answer-heading"> ANSWER </h5>
+                                    <span class="partially-correct">Partially Correct</span>
+                                    </div>
+                                    <div class="answer-container">
+                                        <p>Red</p>
+                                        <p>Blue</p>
+                                    </div>
+                                    <span class="scored">Scored</span>
+
+                                </div>
+                                <div class="question-wrapper">
+                                    <span class="question-icon">Q</span> 
+                                    <h5 class="question-heading">QUESTION 2</h5>
+                                    <p>Which of the following statement is correct about the C#.NET code snippet given below?</p>
+                                    <div class="code-snippet">
+                                        <p>public class Sample</p>
+                                        <p>{</p>
+                                        <p class="code-indent">public int x;</p>
+                                            <p class="code-indent">public virtual void fun()</p>
+                                            <p class="code-indent">{ }</p>
+                                            <p>}</p>
+                                            <p>public class DerivedSample : Sample</p>
+                                            <p>{</p>
+                                            <p class="code-indent">new public void fun()</p>
+                                            <p class="code-indent">{ }</p>
+                                            <p>}</p>
+                                    </div>
+                                    <div class="answer-heading-cont">
+                                    <span class="answer-icon">A</span>
+                                    <h5 class="answer-heading"> ANSWER </h5>
+                                    <span class="correct">Correct</span>
+                                    </div>
+                                    <div class="answer-container">
+
+                                        <p>DerivedSample class hides the fun() method of base class.</p>
+                                    </div>
+                                    <span class="scored">Scored</span>
+                                </div>
+                                <div class="question-wrapper">
+                                    <span class="question-icon">Q</span> 
+                                    <h5 class="question-heading">QUESTION 3</h5>
+                                    <p>What is the result of 1+1 ?</p>
+                                    <div class="answer-heading-cont">
+                                    <span class="answer-icon">A</span>
+                                    <h5 class="answer-heading"> ANSWER </h5>
+                                    <span class="wrong">Wrong</span>
+                                    </div>
+                                    <div class="answer-container">
+                                        <p>3</p>
+                                    </div>
+                                    <span class="scored">Scored</span>
+                                </div>
+                                <div class="question-wrapper">
+                                    <span class="question-icon">Q</span> 
+                                    <h5 class="question-heading">QUESTION 4</h5>
+                                    <p>Describe the task...</p>
+                                    <div class="answer-heading-cont">
+                                    <span class="answer-icon">A</span>
+                                    <h5 class="answer-heading"> ANSWER</h5>
+                                     <span class="correct">Correct</span>
+                                    </div>
+                                    <div class="answer-container">
+                                        <img src="images/space.jpg" class="img-responsive">
+                                    </div>
+                                    <span class="scored">Not scored</span>
+                                </div>
+                            </div>
+                            <h2 class="candidate-feedback">Candidate Feedback</h2>
+                            <div class="feedback-wrapper">
+                                <div class="feedback-difficulty">
+                                    <h5>Difficulty</h5>
+                                    <span class="feedback-easy">
+                                        <span class="easy-icon"></span>
+                                    <span class="easy">EASY</span>
+                                    </span>
+                                    <span class="feedback-medium">
+                                        <span class="medium-icon"></span>
+                                    <span class="medium">MEDIUM</span>
+                                    </span>
+                                    <span class="feedback-hard">
+                                        <span class="hard-icon"></span>
+                                    <span class="hard">HARD</span>
+                                    </span>
+                                </div>
+                                <div class="feedback-comments">
+                                    <h5>Comments</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum dictum nulla at tempus
+                                        mollis. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

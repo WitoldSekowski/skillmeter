@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillmeter account billing</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="mobile-menu">
+
+    </section>
+    <section class="billing-wrapper">
+        <div class="panel-left">
+            <header>
+                <a href="#" class="logo-link col-xs-12">
+                    <img src="images/logo.png" class="img-responsive logo-big">
+                    <img src="images/logo-small.jpg" class="img-responsive logo-small logo-invisible">
+                </a>
+                <nav class="navbar navbar-default col-xs-12 nav-left">
+                    <hr class="left-menu-separator">
+                    <div class="navbar-header">
+                        <button type="button" class="hamburger-button button-nav-left pull-left">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                     <div class="navbar-collapse">
+                        <h5>MENU</h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="dashboard.html" class="menu-text"><img src="images/dashboard.jpg"><span class="menu-text-name">Dashboard</span></a></li>
+                            <li><a href="tests.html" class="menu-text"><img src="images/tests.jpg"><span class="menu-text-name">Tests</span></a></li>
+                            <li><a href="candidates.html" class="menu-text"><img src="images/candidates.jpg"><span class="menu-text-name">Candidates</span></a></li>
+                            <li><a href="" class="menu-text"><img src="images/library.jpg"><span class="menu-text-name">Tests Library</span></a></li>
+                        </ul>
+                    </div>
+                    <hr class="left-menu-separator-2">
+                    <div id="navbar" class="navbar-collapse">
+                        <h5>TEST <span class="test-centre">CENTER</span></h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="notifications.html" class="menu-text"><img src="images/notifications.jpg"><span class="menu-text-name">Notifications</span></a></li>
+                            <li><a href="custom-pages.html" class="menu-text"><img src="images/custom.jpg"><span class="menu-text-name">Custom Pages</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section class="main-billing">
+            <div class="container-fluid main-fluid">
+                <div class="row">
+                    <div class="col-xs-12 left-30">
+                        <div class="top-content-wrapper">
+                            <h3 class="page-title col-sm-5">New Candidate</h3>
+                            <nav class="navbar navbar-default col-sm-7 nav-main">
+                                <div>
+                                    <ul class="nav navbar-nav menu-top">
+                                        <li><a href="#" class="get-help">Get Help<img src="images/arrow-down.jpg"></a></li>
+                                        <li><a tabindex="0" role="button" type="button" class="popover-2 settings" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></a>
+                                        </li>
+                                        <li><a tabindex="0" role="button" type="button" class="account popover-1" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></li>
+                                        <li><a href="#" class="logout"></a></li>
+                                    </ul>
+                                </div>
+                               <ul id="popover-content-1" class="list-group" style="display: none">
+                                    <a href="account-settings.html" class="list-group-item"><img class="account-item-settings" src="images/account-settings-icon.png">Settings</a>
+                                    <a href="billing.html" class="list-group-item"><img class="account-item-settings" src="images/account-billing-icon.png">Billing</a>
+                                </ul>
+                                <ul id="popover-content-2" class="list-group" style="display: none">
+                                    <a href="company-settings.html" class="list-group-item"><img class="account-item-settings" src="images/briefcase.png">Company</a>
+                                    <a href="company-users.html" class="list-group-item"><img class="account-item-settings" src="images/person-logo.png">Users</a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-content col-xs-12">
+                            <hr class="menu-separator">
+                            <div class="new-candidate-wrapper">
+                                <form class="new-candidate-form">
+                                    <div class="input-item">
+                                        <label class="">First Name</label>
+                                        <input type="text" class="input-field">
+                                    </div>
+                                    <div class="input-item">
+                                        <label class="">Last Name</label>
+                                        <input type="text" class="input-field">
+                                    </div>
+                                    <div class="input-item">
+                                        <label class="">Email</label>
+                                        <input type="email" class="input-field">
+                                        <p class="note"><b>Note</b>: Notifications are turned <span class="turned-on">ON</span> <br>will
+                                            not send instructions by email to the candidate. You can change the settings
+                                            on <a>the notifications tab.</a></p>
+                                    </div>
+                                    <div class="input-item">
+                                        <div class="form-group">
+                                            <label class="tests-label" for="sel1">Test(s)</label>
+                                            <select multiple id="sel1" class="select-candidate-test">
+                                            <option>ASP.NET</option>
+                                            <option>C# (old)</option>
+                                            <option>Demo Test</option>
+                                            <option>MS Excel</option>
+                                        </select>
+                                            <p class="note"><b>Note</b>: Hold Ctrl to select more than one test.</p>
+                                        </div>
+                                    </div>
+                                    <div class="input-item">
+                                        <label class="label-pos dropdown-label">Test Center Language<span class="question-mark"></span></label>
+                                        <div class="language-dropdown">
+                                            <button class="btn btn-primary dropdown-toggle dropdown-style candidate-test-dropdown" type="button" data-toggle="dropdown">English
+                                            <span class="custom-caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">English</a></li>
+                                                <li><a href="#">Russian</a></li>
+                                                <li><a href="#">Spanish</a></li>
+                                                <li><a href="#">Italian</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="input-item checkbox-item">
+                                        <label class="label-pos">Require Feedback<span class="question-mark"></span></label>
+                                        <input type="checkbox" id="chB1" class="check_box" name="feedback">
+                                        <label for="chB1" class="checkbox-label"></label>
+                                    </div>
+                                    <div class="input-item checkbox-item">
+                                        <label class="label-pos">Allow Resume<span class="question-mark"></span></label>
+                                        <input type="checkbox" id="chB2" class="check_box" name="resume">
+                                        <label for="chB2" class="checkbox-label"></label>
+                                    </div>
+                                    <div class="new-candidate-buttons">
+                                        <button type="submit" class="btn-submit btn btn-default new-candidate-button save-button">Submit</button>
+                                        <button type="submit" class="cancel-button">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

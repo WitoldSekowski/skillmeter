@@ -1,0 +1,426 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillmeter users</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <section class="mobile-menu">
+
+    </section>
+    <section class="billing-wrapper">
+        <div class="panel-left">
+            <header>
+                <a href="#" class="logo-link col-xs-12">
+                    <img src="images/logo.png" class="img-responsive logo-big">
+                    <img src="images/logo-small.jpg" class="img-responsive logo-small logo-invisible">
+                </a>
+                <nav class="navbar navbar-default col-xs-12 nav-left">
+                    <hr class="left-menu-separator">
+                    <div class="navbar-header">
+                        <button type="button" class="hamburger-button button-nav-left pull-left">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse">
+                        <h5>MENU</h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="dashboard.html" class="menu-text"><img src="images/dashboard.jpg"><span class="menu-text-name">Dashboard</span></a></li>
+                            <li><a href="tests.html" class="menu-text"><img src="images/tests.jpg"><span class="menu-text-name">Tests</span></a></li>
+                            <li><a href="candidates.html" class="menu-text"><img src="images/candidates.jpg"><span class="menu-text-name">Candidates</span></a></li>
+                            <li><a href="" class="menu-text"><img src="images/library.jpg"><span class="menu-text-name">Tests Library</span></a></li>
+                        </ul>
+                    </div>
+                    <hr class="left-menu-separator-2">
+                    <div id="navbar" class="navbar-collapse">
+                        <h5>TEST <span class="test-centre">CENTER</span></h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="notifications.html" class="menu-text"><img src="images/notifications.jpg"><span class="menu-text-name">Notifications</span></a></li>
+                            <li><a href="custom-pages.html" class="menu-text"><img src="images/custom.jpg"><span class="menu-text-name">Custom Pages</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section class="main-billing">
+            <div class="container-fluid main-fluid">
+                <div class="row">
+                    <div class="col-xs-12 left-30">
+                        <div class="top-content-wrapper">
+                            <h3 class="page-title col-sm-5">Demo Test Questions</h3>
+                            <nav class="navbar navbar-default col-sm-7 nav-main">
+                                <div>
+                                    <ul class="nav navbar-nav menu-top">
+                                        <li><a href="#" class="get-help">Get Help<img src="images/arrow-down.jpg"></a></li>
+                                        <li><a tabindex="0" role="button" type="button" class="popover-2 settings" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></a>
+                                        </li>
+                                        <li><a tabindex="0" role="button" type="button" class="account popover-1" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></li>
+                                        <li><a href="#" class="logout"></a></li>
+                                    </ul>
+                                </div>
+                                <ul id="popover-content-1" class="list-group" style="display: none">
+                                    <a href="account-settings.html" class="list-group-item"><img class="account-item-settings" src="images/account-settings-icon.png">Settings</a>
+                                    <a href="billing.html" class="list-group-item"><img class="account-item-settings" src="images/account-billing-icon.png">Billing</a>
+                                </ul>
+                                <ul id="popover-content-2" class="list-group" style="display: none">
+                                    <a href="company-settings.html" class="list-group-item"><img class="account-item-settings" src="images/briefcase.png">Company</a>
+                                    <a href="company-users.html" class="list-group-item"><img class="account-item-settings" src="images/person-logo.png">Users</a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-content col-xs-12">
+                            <hr class="menu-separator">
+                            <div class="demo-test">
+                                <a href="test-new.html"><button type="button" class="question-test-button">New Test</button></a>
+                                <div class="whole-list-opt">
+                                    <h3 class="demo-test-header">Demo</h3>
+                                    <button class="save-order"><span></span>Edit Category</button>
+                                </div>
+                                <ul id="popover-content-5" class="list-group actions-menu" style="display: none">
+                                    <div class="question-content-wrapper">
+                                        <div class="action-buttons test-action-buttons-popover">
+                                            <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                            <a href="test-new.html"><button><span class="test-settings"></span>Settings</button></a>
+                                            <button><a href=""><span class="test-clone"></span>Clone</a></button>
+                                            <button><a href=""><span class="test-print"></span>Print</a></button>
+                                            <button><a href=""><span class="test-delete"></span>Delete</a></button>
+                                        </div>
+                                </ul>
+                                <div class="test-list-wrapper">
+                                    <ul class="test-list">
+                                        <li class="">
+                                            <div class="question-content-wrapper test-page">
+                                                <span class="question-number tests"><span class="new-test-bullet"></span>Demo
+                                                Test
+                                                </span>
+                                                <span class="number-of-questions"><span class="number-of-icon"></span>4</span>
+                                                <span class="new-test-time"><span class="test-time-icon"></span>1H</span>
+                                                <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                    <button><span class="test-clone"></span>Clone</button>
+                                                    <button><span class="test-print"></span>Print</button>
+                                                    <button><span class="test-delete"></span>Delete</button>
+                                                </div>
+                                                <span class="three-dots tests"></span>
+                                                <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="question-content-wrapper test-page">
+                                                <span class="question-number tests"><span class="new-test-bullet"></span>Video
+                                                Test
+                                                </span>
+                                                <span class="number-of-questions"><span class="number-of-icon"></span>1</span>
+                                                <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                    <button><span class="test-clone"></span>Clone</button>
+                                                    <button><span class="test-print"></span>Print</button>
+                                                    <button><span class="test-delete"></span>Delete</button>
+                                                </div>
+                                                <span class="three-dots tests"></span>
+
+                                                <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="demo-test">
+                                    <div class="whole-list-opt">
+                                        <h3 class="demo-test-header">Default</h3>
+                                        <button class="save-order"><span></span>Edit Category</button>
+                                    </div>
+                                    <div class="test-list-wrapper">
+                                        <ul class="test-list">
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>ASP.NET</span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>1</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>C#
+                                                    (old)
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>45 min
+                                                    </span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>C++
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>0</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min
+                                                    </span>
+                                                    <div class="action-buttons">
+                                                      <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>Core
+                                                    Development
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>0</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>1H</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>Javascript</span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>0</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                      <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>MS
+                                                    Excel
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>MS
+                                                    PowerPoint
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>MS
+                                                    Project
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>MS
+                                                    Word
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>MySQL</span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>30 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>SQL
+                                                    Server
+                                                    </span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>4</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>1H</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>Test
+                                                    practice .NET</span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>0</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>50 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="demo-test">
+                                    <div class="whole-list-opt">
+                                        <h3 class="demo-test-header">Programming</h3>
+                                        <button class="save-order"><span></span>Edit Category</button>
+                                    </div>
+                                    <div class="test-list-wrapper">
+                                        <ul class="test-list">
+                                            <li class="">
+                                                <div class="question-content-wrapper test-page">
+                                                    <span class="question-number tests"><span class="new-test-bullet"></span>PHP</span>
+                                                    <span class="number-of-questions"><span class="number-of-icon"></span>20</span>
+                                                    <span class="new-test-time"><span class="test-time-icon"></span>40 min</span>
+                                                    <div class="action-buttons">
+                                                    <a href="demo-test-questions.html"><button><span class="test-questions-icon"></span>Questions</button></a>
+                                                   <a href="test-new.html"> <button><span class="test-settings"></span>Settings</button></a>
+                                                        <button><span class="test-clone"></span>Clone</button>
+                                                        <button><span class="test-print"></span>Print</button>
+                                                        <button><span class="test-delete"></span>Delete</button>
+                                                    </div>
+                                                    <span class="three-dots tests"></span>
+
+                                                    <span class="test-actions popover-5" data-toggle="popover" data-placement="bottom"></span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

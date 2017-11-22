@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillmeter users</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.quilljs.com/1.2.5/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <section class="mobile-menu">
+
+    </section>
+    <section class="billing-wrapper">
+        <div class="panel-left">
+            <header>
+                <a href="#" class="logo-link col-xs-12">
+                    <img src="images/logo.png" class="img-responsive logo-big">
+                    <img src="images/logo-small.jpg" class="img-responsive logo-small logo-invisible">
+                </a>
+                <nav class="navbar navbar-default col-xs-12 nav-left">
+                    <hr class="left-menu-separator">
+                    <div class="navbar-header">
+                        <button type="button" class="hamburger-button button-nav-left pull-left">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                     <div class="navbar-collapse">
+                        <h5>MENU</h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="dashboard.html" class="menu-text"><img src="images/dashboard.jpg"><span class="menu-text-name">Dashboard</span></a></li>
+                            <li><a href="tests.html" class="menu-text"><img src="images/tests.jpg"><span class="menu-text-name">Tests</span></a></li>
+                            <li><a href="candidates.html" class="menu-text"><img src="images/candidates.jpg"><span class="menu-text-name">Candidates</span></a></li>
+                            <li><a href="" class="menu-text"><img src="images/library.jpg"><span class="menu-text-name">Tests Library</span></a></li>
+                        </ul>
+                    </div>
+                    <hr class="left-menu-separator-2">
+                    <div id="navbar" class="navbar-collapse">
+                        <h5>TEST <span class="test-centre">CENTER</span></h5>
+                        <ul class="nav navbar-nav col-xs-12">
+                            <li><a href="notifications.html" class="menu-text"><img src="images/notifications.jpg"><span class="menu-text-name">Notifications</span></a></li>
+                            <li><a href="custom-pages.html" class="menu-text"><img src="images/custom.jpg"><span class="menu-text-name">Custom Pages</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section class="main-billing">
+            <div class="container-fluid main-fluid">
+                <div class="row">
+                    <div class="col-xs-12 left-30">
+                        <div class="top-content-wrapper">
+                            <h3 class="page-title col-sm-5">Notifications</h3>
+                            <nav class="navbar navbar-default col-sm-7 nav-main">
+                                <div>
+                                    <ul class="nav navbar-nav menu-top">
+                                        <li><a href="#" class="get-help">Get Help<img src="images/arrow-down.jpg"></a></li>
+                                        <li><a tabindex="0" role="button" type="button" class="popover-2 settings" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></a>
+                                        </li>
+                                        <li><a tabindex="0" role="button" type="button" class="account popover-1" data-toggle="popover"
+                                                data-trigger="focus" data-placement="bottom"></a></li>
+                                        <li><a href="#" class="logout"></a></li>
+                                    </ul>
+                                </div>
+                               <ul id="popover-content-1" class="list-group" style="display: none">
+                                    <a href="account-settings.html" class="list-group-item"><img class="account-item-settings" src="images/account-settings-icon.png">Settings</a>
+                                    <a href="billing.html" class="list-group-item"><img class="account-item-settings" src="images/account-billing-icon.png">Billing</a>
+                                </ul>
+                                <ul id="popover-content-2" class="list-group" style="display: none">
+                                    <a href="company-settings.html" class="list-group-item"><img class="account-item-settings" src="images/briefcase.png">Company</a>
+                                    <a href="company-users.html" class="list-group-item"><img class="account-item-settings" src="images/person-logo.png">Users</a>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="main-content col-xs-12">
+                            <hr class="menu-separator">
+                            <div class="notifications">
+                                <div class="subscribed">
+                                    <p><span src="images/info-icon.jpg" class="info-icon"></span>This email will be sent to
+                                        all candidates once they've been assigned to a test. This is a personal setting and
+                                        will not be shared with other users from your organisation.
+                                    </p>
+                                </div>
+                                <div class="text-editor-wrapper">
+
+                                    <div class="input-item text-editor-title">
+                                        <label>Notification Subject</label>
+                                        <input type="text" class="input-field">
+                                    </div>
+
+                                    <label class="message-label">Notification Email</label>
+                                    <div id="editor">
+
+                                        <p>Hello {first_name} {last_name},<br><br>You've been assigned to take an assessment:
+                                            {test_name}.
+                                            <br><br>When you are ready, click on the following link to take the assessment:
+                                            {test_center}
+                                        </p>
+                                    </div>
+                                    <div class="custom-pages-note">
+                                        <p class="note"><b>Note</b>: All {} tags will be replaced by Skillmeter before sending the email
+                                            <br>Mandatory: {test_center}, {pin_code} <br>Optional: {first_name}, {last_name},
+                                            {company_name}, {test_name}
+                                        </p>
+                                    </div>
+                                    <div class="notifications-item-wrapper">
+                                        <div class="input-item">
+                                            <label class="label-pos dropdown-label">Language<span class="question-mark"></span></label>
+                                            <div class="language-dropdown-wrapper">
+                                                <button class="btn dropdown-toggle dropdown-style" type="button" data-toggle="dropdown">English
+                                            <span class="custom-caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">English</a></li>
+                                                    <li><a href="#">Russian</a></li>
+                                                    <li><a href="#">Spanish</a></li>
+                                                    <li><a href="#">Italian</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-item checkbox-item">
+                                            <label class="label-pos">Enable Notifications<span class="question-mark"></span></label>
+                                            <input type="checkbox" id="chB1" class="check_box" name="feedback">
+                                            <label for="chB1" class="checkbox-label"></label>
+                                        </div>
+                                        <div class="notifications-buttons-wrapper">
+                                        <button type="button" class="save-notification-page-button">Save</button>
+                                        <button type="button" class="cancel-button" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscribed">
+                                    <p><span src="images/info-icon.jpg" class="info-icon"></span>By default, results notifications
+                                        are sent to the user who added the candidate. However, you can also nominate alternate
+                                        user(s) to receive the results notifications.
+                                    </p>
+                                </div>
+                                <div class="results-notifications">
+                                    <div class="input-item">
+                                        <div class="form-group">
+                                            <label class="results-label" for="sel1">Alternate Notifications</label>
+                                            <select multiple id="sel1" class="select-notifications">
+                                            <option>daniel.butler@gmail.com</option>
+                                            <option>mark. holder@gmail.com</option>
+                                        </select>
+                                            <p class="note"><b>Note</b>: Hold Ctrl to select more than one user.</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="save-notification-page-button">Save</button>
+                                    <button type="button" class="cancel-button" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+        </section>
+    </section>
+    <script src="https://cdn.quilljs.com/1.2.5/quill.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

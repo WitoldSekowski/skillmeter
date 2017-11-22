@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillmeter account billing</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="billing-wrapper">
+        <section class="main-billing">
+            <div class="container-fluid test-question short-question">
+                <div class="row">
+                    <div class="col-xs-12 padding-115">
+                        <header class="question-header">
+                            <h2>Question X</h2>
+                            <div class="progress-wrapper-question">
+                                <div class="progress progress-question-preview">
+                                    <div class="progress-bar bar-green" role="progressbar" aria-valuenow="83.33" aria-valuemin="0" aria-valuemax="100" style="width:83.33%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timer">
+                                <span class="timer-clock"></span>
+                                <span class="current-time">00:00</span>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 padding-115">
+                        <div class="question-wrapper">
+                            <h3>What are your favorite colors?</h3>
+                            <div class="question-answer">
+                                <input type="checkbox" id="chB3" class="check_box" name="resume">
+                                <label for="chB3" class="checkbox-label"></label>
+                                <label class="answer-label">Red</label>
+                            </div>
+                            <div class="question-answer">
+                                <input type="checkbox" id="chB4" class="check_box" name="resume">
+                                <label for="chB4" class="checkbox-label"></label>
+                                <label class="answer-label">Blue</label>
+                            </div>
+                            <div class="question-answer">
+                                <input type="checkbox" id="chB5" class="check_box" name="resume">
+                                <label for="chB5" class="checkbox-label"></label>
+                                <label class="answer-label">Green</label>
+                            </div>
+                        </div>
+                        <div class="button-wrapper">
+                            <button type="submit" class="btn-submit btn btn-default new-candidate-button save-answer">Save Answer</button>
+                            <button class="button-transparent">Skip (answer later)</button>
+                            <button class="button-transparent second-button"><span class="flag-question"></span>Flag for review</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
